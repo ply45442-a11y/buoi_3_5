@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{ color: rgb(60, 0, 255); background-color: aquamarine;}
+        body{background-color: rgb(255, 255, 232);}
+    </style>
+</head>
+<body>
+    <h1> ĐĂNG KÍ HỌC VIÊN</h1>
+    <form>
+        <label for="name"> Họ và tên </label>
+        <input type="text" name="name" id="name" required> 
+        <br>
+        <label for="date"> Ngày sinh </label>
+        <input type="date" name="date" id="date" required> 
+        <br>
+        <label for="gender"> Giới tính </label>
+        <label><input type="radio" name="gender" id="" required>Nu</label>
+        <label><input type="radio" name="gender" id="" required>Nam</label>
+        <br>
+
+        <label for="dc"> Địa chỉ</label>
+        <textarea rows="3" cols="3" required></textarea> 
+        <br>
+        <label for="dc"> Lớp </label>
+        <select  >
+            <option value="1" > s1</option>
+            <option value="2"> s2</option>
+            <option value="3"> s3</option>
+            </select>
+        <br>
+        <label for="mail"> Email </label>
+        <input type="email" name="mail" id="mail" required> 
+        <br>
+        <label for="number"> Điện thoại </label>
+        <input type="number" name="number" id="number" required> 
+        <br>
+        <button type="submit"></button>
+        <button type="reset"></button>
+    </form>
+</body>
+</html>

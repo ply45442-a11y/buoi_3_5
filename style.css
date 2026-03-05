@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(232, 244, 255, 0.812);
+}
+li{
+    color: rgb(106, 42, 165);
+    font-size: larger;
+}
+p{color: darkblue;}
+img{
+    width: 125px;
+    height:150px;
+}

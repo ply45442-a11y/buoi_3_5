@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../CIT.calculate_gpa"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CIT.HTML"
+	}
+}

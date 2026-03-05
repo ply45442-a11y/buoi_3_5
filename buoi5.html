@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> form và media trong HTML </h1>
+    <fieldset>
+        <legend> Đăng kí thông tin</legend>
+
+    <!-- tạo viền bao quanh cái link đăng kí -->
+        <form 
+            action ="thongtin.php"
+            method="get" 
+            target="self"> 
+                <!-- phần method: get = để trống, thì dữ liệu có thể công khai cho mọi người cùng nhìn thấy; 
+                nếu muốn thông tin chỉ người tạo form nhìn thấy thì sẽ sủ dụng post;
+                thuộc tính target: nếu dùng self thì khi gửi trang sẽ mở luôn trong tap đang dùng;
+                Nếu sử dụng blank thì khi gửi sẽ sang một tab mới-->
+            <lable for="name"> Họ và tên của bạn </lable> <br>
+                <!-- thẻ lable : nhãn dán để biết cần nhập cái gì> -->
+            <input type="text" 
+                name="name" 
+                id="name" 
+                placeholder="tên của bạn" 
+                size="20"
+                required> <br> <br>
+                <!-- thẻ input:
+                Thuộc tính type: đặt kiểu dữ liệu mà người nhập nhập vào( tên thì dùng văn bản, số thì dùng number)
+                Thuộc tính name: thông tin sẽ được hiển thị trên thanh miền
+                Thuộc tính id: nếu để trùng với name thì sẽ tạo sự liên kết > bấm vào nhãn sẽ tự động nhảy xuống input
+                Thuộc tính Placehoder: nếu không dùng lable thì trong ô input sẽ hiện thông tin trong ô input
+                Thuộc tính size: chỉnh độ dài của ô input -->
+             <lable for="number"> Số điện thoại của bạn</lable> <br>
+             <input 
+                type="number" 
+                name="number" 
+                id="number" 
+                placeholder="số điện thoại của bạn" 
+                size=" 20"
+                required> 
+                <br> <br>
+            <lable for="password"> Mật khẩu của bạn</lable> <br>
+            <input 
+                type="password" 
+                name="password" 
+                id="password" 
+                placeholder="Mật khẩu của bạn là" 
+                size=" 20"
+                required> 
+                <br> <br>
+                 
+
+            <lable for="mail"> Mail của bạn</lable> <br>
+            <input 
+                type="email" 
+                name="mail" 
+                id="mail" 
+                placeholder="Email của bạn là" 
+                size="20"
+                required> 
+                <br> <br>
+            <lable for="date"> Ngày sinh của bạn</lable> <br>
+            <input 
+                type="date" 
+                name="date" 
+                id="date" 
+                placeholder="Ngày sinh của bạn" 
+                size="20"
+                required> 
+                <br> <br>
+
+            <lable for="color"> Màu yêu thích của bạn</lable> <br>
+             <input 
+                type="color" 
+                name="color" 
+                id="color" 
+                placeholder="Email của bạn là" 
+                size="20"
+                required> 
+                <br> <br>
+            <lable for="gender"> Giới tính của bạn</lable> <br>
+            <lable><input type="radio" name="gender" id="" required>Nữ</lable>
+            <lable><input type="radio" name="gender" id="" required>Nam</lable>
+            <lable><input type="radio" name="gender" id="" required>Khác</lable>
+            <br> <br>
+                    <!-- nếu để trống name hoặc để name không giống nhau thì sẽ hiểu là 3 câu trả lời khác nhau;
+                    Nếu muốn chỉ chọn 1 cái thì để name giống nhau thì trình duyệt sẽ hiểu là chọn 1 trong 3 đáp án -->
+                    <!-- nhân bản: bôi đen shift + alt + pg xuống
+                    Sửa đồng loạt (các dòng phải giống nhau) bôi đen 1 thẻ đầu tiên rồi ctrl D -->
+            <lable for="fav"> Sở thích của bạn</lable> <br>
+            <lable><input type="checkbox" name="fav" id="" >Câu lông</lable>
+            <lable><input type="checkbox" name="fav" id="">Bóng rôt</lable>
+            <lable><input type="checkbox" name="fav" id="">Đá bóng</lable>
+            <br> <br>
+            
+            <label for="dc"> Nơi bạn sinh sống</label><br>
+            <select size="6">
+                <option value="1" selected> Tuyên Quang</option>
+                <option value="2"> Hà Nội</option>
+                <option value="3"> Phú Thọ</option>
+                    <!-- thuộc tính selected mặc định là Tuyên Quang -->
+                    <!-- size thì sẽ hiện ra bảng có n dòng -->
+            </select>
+            <br>
+
+            <label for="bt"> Giới thiệu bản thân</label>
+            <textarea rows="3"  cols="3"></textarea>
+            <br>
+
+            <button type="submit">Gửi</button>
+            <button type="reset"> Làm lại</button>
+            <!-- thuộc tính type: có 2 cái là submit(gửi) và reset(làm lại) -->
+        </form>
+         
+    </fieldset>
+</body>
+</html>

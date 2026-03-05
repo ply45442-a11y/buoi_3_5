@@ -1,0 +1,32 @@
+caption{
+    color: coral;
+}
+body{
+    background-color: bisque;
+}
+th{
+    background-color: coral;
+}
+.color1{
+    background-color: rgb(255, 201, 143);
+}
+.color2{
+    background-color: bisque;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+}
+tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: black;
+    color: darkblue;
+    height: 50px;
+    margin: 25px;
+    padding: 2px;
+}
+td{
+    text-align: center;
+}

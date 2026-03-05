@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(220, 201, 238);
+}
+header{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 40px;
+   }
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px;
+}
+nav{
+    background-color:blueviolet;
+    color: white;
+    padding: 20px;
+
+}
+nav li:hover{
+    color: black;
+}
+.image{
+    background-color: rgb(213, 182, 243);
+    padding: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+section{
+    flex: 3;
+    background-color: aliceblue;
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+}
+aside{
+    flex: 1;
+    background-color: aliceblue;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+}
